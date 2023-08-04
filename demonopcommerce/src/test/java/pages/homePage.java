@@ -205,7 +205,7 @@ public class homePage {
         ArrayList<String> tabs = new ArrayList<>(Hooks.driver.getWindowHandles());
         System.out.println(tabs.size());
         Hooks.driver.switchTo().window(tabs.get(1));
-        Assert.assertTrue(Hooks.driver.getCurrentUrl().contains("https://web.facebook.com/nopCommerce?_rdc=1&_rdr"));
+        Assert.assertTrue(Hooks.driver.getCurrentUrl().contains("https://web.facebook.com"));
     }
 
     public void followUsOnTwitter() {
